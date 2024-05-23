@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Sergey Pozhilov (GetTemplate.com)">
     
-    <title>Portfolio</title>
+    <title>Compétences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="assets/images/gt_favicon.png">
     
@@ -14,99 +15,221 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-    <!-- Styles personnalisés pour notre modèle -->
+    <!-- Custom styles for our template -->
     <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
     <link rel="stylesheet" href="assets/css/main.css">
 
-    <!-- Correctifs HTML5 et Respond.js pour le support d'Internet Explorer 8 -->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <style>
+        .pdf-container {
+            margin-top: 20px;
+        }
+        .center-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        details {
+            background: #f7f7f7;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        details[open] {
+            background: #e6e6e6;
+        }
+        details summary {
+            cursor: pointer;
+            font-size: 1.2em;
+            font-weight: bold;
+            outline: none;
+            list-style: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details summary:before {
+            content: '\f0d7'; /* Unicode for a FontAwesome down arrow */
+            font-family: 'FontAwesome';
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        details[open] summary:before {
+            content: '\f0d8'; /* Unicode for a FontAwesome up arrow */
+        }
+        details summary:hover {
+            color: #007bff;
+        }
+		img {
+			width: 100%;
+			margin-top: 30px;
+		}
+    </style>
+
 </head>
 
-<body class="home">
-    <!-- Barre de navigation fixe -->
+<body>
+    <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top headroom">
         <div class="container">
             <div class="navbar-header">
-                <!-- Bouton pour les plus petits écrans -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="index.html"></a>
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav pull-right">
-                    <li class="active"><a href="#">Profil</a></li>
-                    <li><a href="about.html">Compétences</a></li>
+                    <li><a href="index.html">Profil</a></li>
+                    <li class="active"><a href="about.html">Compétences</a></li>
                     <li><a href="Veille Techno.html">Veille Techno</a></li>
-                    <li><a href="formation.html">Formations et Expériences</a></li>    
+                    <li><a href="formation.html">Formations et Expériences</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </div> 
     <!-- /.navbar -->
 
-    <!-- En-tête -->
-    <header id="head">
-        <div class="container">
-            <div class="row">
-                <p> Maxime Perroux </p>                
-                <img src="assets/images/header.png" alt="Image de profil">
-                <h1 class="lead">Bienvenue sur mon portfolio Professionnel</h1>
-                <p class="tagline">Développeur Polyvalent et Compétent <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus"></a></p>
+    <header id="head" class="secondary"></header>
+
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="thin">Mes Compétences</h2>
+                <p class="text-muted">
+                    Au cours de mes deux années de BTS, j'ai acquis une variété de compétences techniques et professionnelles.
+                </p>
+                <div class="center-btn">
+                    <details>
+                        <summary>Voir mes compétences</summary>
+                        <div class="pdf-container">
+                            <embed src="assets/images/TableauCompetences.pdf" type="application/pdf" width="100%" height="600px" />
+                        </div>
+					</details>
+                    <br> <h1> Réalisations faites tout au long du BTS </h1>
+						<details>
+							<summary>PPE 1 Création d’un site à l’aide du CMS Wordpress.</summary>
+							<p> PPE 1 </p>
+                            <img src="assets/images/accueil.png"alt="Image de l'accueil PPE1">
+                            <img src="assets/images/Mobile PPE1.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/Choix PPE1.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/Contexte PPE1.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/laragon.png"alt="Image de du mobile PPE1">
+
+
+						</details>
+						<details>
+							<summary>PPE 2 Sécurisation et SEO du site Wordpress.</summary>
+							<p> PPE 2 </p>
+                            <img src="assets/images/PPE2.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/secupress.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/E+ PPE2.png"alt="Image de l'accueil PPE1">
+                            <img src="assets/images/B+ PPE2.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE 2 SEO.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/Authenticator PPE2.png"alt="Image de du mobile PPE1">
+
+                            
+
+						</details>
+						<details>
+							<summary>PPE 3 Utilisation de Boostrap afin de gérer une réservation en ligne.</summary>
+							<p> PPE 3 </p>
+                            <img src="assets/images/PPE 3 Bootstrap.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE3 Contexte.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE 3 Gant.png"alt="Image de du mobile PPE1">
+
+						</details>
+						<details>
+							<summary>PPE 4 Gestion des données dans une application Java avec NetBeans.</summary>
+							<p> PPE 4 </p>
+                            <img src="assets/images/PPE 4 Contexte.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/Gantt java.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE 4 Trello.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE 4 agile.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE 4 Accueil.png"alt="Image de du mobile PPE1">
+
+						</details>
+						<details>
+							<summary>GLPI</summary>
+							<p> GLPI </p>
+                            <img src="assets/images/glpi1.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/glpi2.png"alt="Image de du mobile PPE1">
+						</details>
+						<details>
+							<summary>Paramétrage d’un serveur Debian</summary>
+							<p> Serveur Debian </p>
+                            <img src="assets/images/glpi.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/config.png"alt="Image de du mobile PPE1">
+						</details>
+						<details>
+							<summary>PPE Deuxième Année Application Mobile et Application web</summary>
+							<p> PPE Deuxième Année Application Mobile et Application web </p>
+                            <img src="assets/images/laragon.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE22.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/PPE22 t.png"alt="Image de du mobile PPE1">
+
+
+
+						</details> <br>
+                        <h1> Réalisations en milieu professionnel en cours de première année </h1>
+						<details>
+							<summary>Création d’un site vitrine pour un particulier </summary>
+							<p> Création d’un site vitrine pour un particulier  </p>
+                            <img src="assets/images/wordpresss.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/accueilll.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/agileee.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/ganttt.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/laragon.png"alt="Image de du mobile PPE1">
+						</details>
+						<details>
+							<summary>Sécurisation et gestion du SEO</summary>
+							<p> Sécurisation et gestion du SEO </p>
+                            <img src="assets/images/Securite1.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/Securite2.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/ref.png"alt="Image de du mobile PPE1">
+						</details>
+						<details>
+							<summary>Réalisation d’une documentation utilisateur</summary>
+							<p> Réalisation d’une documentation utilisateur </p>
+                            <img src="assets/images/doc1.png"alt="Image de du mobile PPE1">
+                            <img src="assets/images/Doc2.png"alt="Image de du mobile PPE1">
+						</details>
+						<details>
+							<summary>Sauvegarde et hébergement de mon site avec OVH </summary>
+							<p> Sauvegarde et hébergement de mon site avec OVH </p>
+                            <img src="assets/images/ovh.png"alt="Image de du mobile PPE1">
+
+						</details>
+                        <br> <h1> Réalisations en milieu professionnel en cours de seconde année </h1>
+
+						<details>
+							<summary>Création de requête Ajax</summary>
+							<p> Création de requête Ajax </p>
+                            <img src="assets/images/laragon.png" alt="Image de laragon">
+							<img src="assets/images/scrum.png" alt="Image de bitbucket">
+                            <img src="assets/images/ajax.png" alt="Image de bitbucket">
+
+
+						</details>
+						<details>
+							<summary>Mise en place du Webservice</summary>
+							<p><br>&#8226; J'ai déployé un service en développement une API fonctionnel servant de page de test pour les futurs développeurs.</p>
+						</p>
+							<img src="assets/images/laragon.png" alt="Image de laragon">
+							<img src="assets/images/bitbucket.png" alt="Image de bitbucket">
+							<p> <br>&#8226; J'ai déployé un service en développement une API fonctionnel servant de page de test pour les futurs développeurs.</p>
+							<img src="assets/images/api.png" alt="Image de l'api">
+							<p><br>&#8226; J'ai planifié mes activités durant le développement de l'API via la méthode Scrum</p>
+							<img src="assets/images/scrum.png" alt="Image de la méthode Scrum">
+							<p><br>&#8226; J'ai exploité les données de l'entreprise notamment en interagissant avec la base de donnée pour faire en sorte de pouvoir rajouter des éléments à cette dernière.</p>
+							<img src="assets/images/bdd.png" alt="Image des données">
+						</details>
+                </div>
             </div>
         </div>
-    </header>
-    <!-- /Header -->
-
-    <!-- Introduction -->
-    <div class="container text-center">
-        <br> <br>
-        <h2 class="thin">Qui suis-je ?</h2>
-        <p class="text-muted">
-            Diplômé d'un Bac Technologique STI2D, je suis en
-            deuxième année de BTS SIO, spécialisé dans la
-            conception de sites web et la cybersécurité. Créatif,
-            dynamique, j'aime travailler en équipe et évoluer dans
-            un environnement de haute technologie.
-        </p>
-    </div>
-    <!-- /Introduction-->
-        
-    <!-- Points forts - jumbotron -->
-    <div class="jumbotron top-space">
-        <div class="container">
-            
-            <h3 class="text-center thin">Mes centres d'intérêts</h3>
-            
-            <div class="row">
-                <div class="col-md-3 col-sm-6 highlight">
-                    <div class="h-caption"><h4><img src="assets/images/Informatique.jpg" alt="Informatique">Informatique</h4></div>
-                    <div class="h-body text-center">
-                        <p>L'informatique est ma passion, où je trouve un équilibre parfait entre rigueur technique et créativité artistique. Le montage d'ordinateurs et l'édition de vidéos/photos me captivent, me permettant de créer des machines sur mesure et d'exprimer ma vision artistique à travers des images et des vidéos.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 highlight">
-                    <div class="h-caption"><h4><img src="assets/images/Musculation.jpg" alt="Musculation">Musculation</h4></div>
-                    <div class="h-body text-center">
-                        <p>La musculation est bien plus qu'un simple exercice physique pour moi, c'est un mode de vie. À travers la salle de sport, je trouve non seulement la force physique, mais aussi la discipline mentale nécessaire pour dépasser mes limites et atteindre mes objectifs.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 highlight">
-                    <div class="h-caption"><h4><img src="assets/images/Badminton.jpg" alt="Badminton">Badminton</h4></div>
-                    <div class="h-body text-center">
-                        <p>Le badminton me procure une très bonne forme physique tout en développant ma coordination car c'est un sport d'équipe.Il m'offre également des opportunités sociales enrichissantes au sein d'une communauté passionnée de joueurs.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 highlight">
-                    <div class="h-caption"><h4><img src="assets/images/RéseauSociaux.jpg" alt="Réseaux sociaux">Réseaux sociaux</h4></div>
-                    <div class="h-body text-center">
-                        <p>Les réseaux sociaux me facilitent l'accès à une multitude de contenus d'actualité et de sources variées, ce qui me permet de rester informé sur une large gamme de sujets et de perspectives, et ainsi d'approfondir ma compréhension du monde qui m'entoure.</p>
-                    </div>
-                </div>
-            </div> <!-- /row -->
-        </div> <!-- /container -->
-    </div> <!-- /jumbotron -->
+    </div> <!-- /container -->
 
     <footer id="footer" class="top-space">
         <div class="footer1">
@@ -117,7 +240,8 @@
                         <h3 class="widget-title">Me contacter</h3>
                         <div class="widget-body">
                             <p>Tel : 06 72 93 32 20<br>
-                                <a href="mailto:maxime.perroux2@gmail.com">Mail : maxime.perroux2@gmail.com</a><br><br>
+                                <a href="mailto:maxime.perroux2@gmail.com">Mail : maxime.perroux2@gmail.com</a><br>
+                                <br>
                             </p>    
                         </div>
                     </div>
